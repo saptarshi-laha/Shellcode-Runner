@@ -1,0 +1,9 @@
+﻿  main.c
+C:\Users\sapta\Rik & Rhea Dropbox\Saptarshi Laha (exploited.website)\PC (2)\Documents\Visual Studio Projects\Shellcode Runner\Shellcode Runner\main.c(47,50): warning C4244: '=': conversion from 'long' to 'unsigned char', possible loss of data
+C:\Users\sapta\Rik & Rhea Dropbox\Saptarshi Laha (exploited.website)\PC (2)\Documents\Visual Studio Projects\Shellcode Runner\Shellcode Runner\main.c(128,50): warning C4244: '=': conversion from 'long' to 'unsigned char', possible loss of data
+C:\Users\sapta\Rik & Rhea Dropbox\Saptarshi Laha (exploited.website)\PC (2)\Documents\Visual Studio Projects\Shellcode Runner\Shellcode Runner\main.c(218,45): warning C4244: '=': conversion from 'long' to 'unsigned char', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 4 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Shellcode Runner.vcxproj -> C:\Users\sapta\Rik & Rhea Dropbox\Saptarshi Laha (exploited.website)\PC (2)\Documents\Visual Studio Projects\Shellcode Runner\Shellcode Runner\x64\Release\Shellcode Runner.exe
