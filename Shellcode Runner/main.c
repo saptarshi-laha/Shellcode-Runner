@@ -62,6 +62,30 @@ int main(int argc, char** argv) {
 
 			fclose(stream);
 
+			if (size % 2 == 0) {
+				size_t dataSize = (size / 2) + 1;
+				unsigned char* executableBuffer = (char*)calloc(dataSize, 1);
+				unsigned char hex[2];
+				for (i = 0; i < size; i = i + 2) {
+					hex[0] = buffer[i];
+					hex[1] = buffer[i + 1];
+
+					executableBuffer[((i + 2) / 2) - 1] = strtol(hex, 0, 16);
+
+				}
+
+				executableBuffer[((i + 1) / 2)] = 0;
+				free(buffer);
+				//Common Windows functions.
+				DebugBreak();
+				//Use this before jump.
+
+			}
+			else {
+				printf("Error Parsing Hexadecimal Data - Not A Multiple of 2\n");
+				return -1;
+			}
+
 		}
 		else if (strcmp(argv[1], "-bin") == 0) {
 
@@ -94,9 +118,9 @@ int main(int argc, char** argv) {
 				fclose(stream);
 
 				if (size % 8 == 0) {
-					size_t dataSize = size / 8;
+					size_t dataSize = (size / 8) + 1;
 					unsigned char* executableBuffer = (char*)calloc(dataSize, 1);
-					char binary[8];
+					unsigned char binary[8];
 					for (i = 0; i < size; i = i + 8) {
 						binary[0] = buffer[i];
 						binary[1] = buffer[i + 1];
@@ -105,14 +129,14 @@ int main(int argc, char** argv) {
 						binary[4] = buffer[i + 4];
 						binary[5] = buffer[i + 5];
 						binary[6] = buffer[i + 6];
-						buffer[7] = buffer[i + 7];
+						binary[7] = buffer[i + 7];
 
-						executableBuffer[(i+8)/8] = strtol(binary, 0, 2);
+						executableBuffer[((i+8)/8)-1] = strtol(binary, 0, 2);
 
 					}
 
+					executableBuffer[((i + 7) / 8)] = 0;
 					free(buffer);
-
 					//Common Windows functions.
 					DebugBreak();
 					//Use this before jump.

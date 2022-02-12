@@ -1,3 +1,4 @@
 ﻿  main.c
-C:\Users\sapta\Rik & Rhea Dropbox\Saptarshi Laha (exploited.website)\PC (2)\Documents\Visual Studio Projects\Shellcode Runner\Shellcode Runner\main.c(110,41): warning C4244: '=': conversion from 'long' to 'unsigned char', possible loss of data
+C:\Users\sapta\Rik & Rhea Dropbox\Saptarshi Laha (exploited.website)\PC (2)\Documents\Visual Studio Projects\Shellcode Runner\Shellcode Runner\main.c(73,50): warning C4244: '=': conversion from 'long' to 'unsigned char', possible loss of data
+C:\Users\sapta\Rik & Rhea Dropbox\Saptarshi Laha (exploited.website)\PC (2)\Documents\Visual Studio Projects\Shellcode Runner\Shellcode Runner\main.c(135,45): warning C4244: '=': conversion from 'long' to 'unsigned char', possible loss of data
   Shellcode Runner.vcxproj -> C:\Users\sapta\Rik & Rhea Dropbox\Saptarshi Laha (exploited.website)\PC (2)\Documents\Visual Studio Projects\Shellcode Runner\Shellcode Runner\x64\Debug\Shellcode Runner.exe
