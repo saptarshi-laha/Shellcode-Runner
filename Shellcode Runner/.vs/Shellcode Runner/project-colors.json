@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b6a72d44-8a2a-4d7b-9b65-0734fd9c25e0": {
+      "ProjectGuid": "b6a72d44-8a2a-4d7b-9b65-0734fd9c25e0",
+      "DisplayName": "Shellcode Runner",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
